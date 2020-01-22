@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         {% for question in questions %}
+            <tr>
+               <th> {{ question.question }} </th>
+               <td> {{ question.user.name }} </td>
+                <td> {{ question.date }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
